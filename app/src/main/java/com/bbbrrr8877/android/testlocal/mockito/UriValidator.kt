@@ -18,10 +18,10 @@ class UriValidator(val context: Context) {
     }
 
     private fun isUri(uri: String): Boolean {
-        return "http" == URI.create(uri).scheme
+        return "http".equals(URI.create(uri).scheme)
     }
 
     private fun isFile(uri: String) : Boolean {
-        return "fike" == URI.create(uri).scheme
+        return "file".equals(URI.create(uri).scheme)
     }
 }
